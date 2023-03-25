@@ -42,9 +42,9 @@ var building = {
     ],
     income:[
         1,
-        15,
-        155,
-        1555
+        10,
+        100,
+        1000
     ],
     cost  :[
         100,
@@ -177,7 +177,7 @@ var display = {
     updateScore: function() {
         document.getElementById("score").innerHTML =  game.score;
         document.getElementById("scorepersecond").innerHTML =  game.getScorePerSecond();
-        document.title = game.score + " coins - First Clicker";
+        document.title = game.score + " coins - Nate's Clicker";
     },
 
     updateShop: function() {
@@ -330,9 +330,8 @@ function createNumberOnClicker(event) {
     fadeOut(element,3000, 4,0.05, function(event) {
         element.remove();
     });
-
-
 }
+
 
 document.getElementById("clicker").addEventListener("click", function(event) {
     game.totalClicks++;
@@ -368,9 +367,9 @@ setInterval(function() {
 
 
 //Auto Save
-// setInterval(function() {
-//          saveGame();
-// },30000);
+setInterval(function() {
+         saveGame();
+},30000);
 
 //Save on pressing ctrl-s key down
 document.addEventListener("keydown",function(event) {
