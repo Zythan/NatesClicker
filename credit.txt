@@ -1,0 +1,26 @@
+Tutorial:
+Tanktot Games
+HTML & JS - How to make an incremental/clicker game - #1 The Basics
+https://www.youtube.com/watch?v=d-AbDEwpp6g
+
+
+Graphics:
+opengameart.org
+
+Bart Kelsey
+https://opengameart.org/users/bart
+https://opengameart.org/content/glitch-ix-desert-terrain-svg
+
+Flare Weapon Icons 2
+https://opengameart.org/content/flare-weapon-icons-2
+Models by Clint Bellanger
+Paint finish by Justin Nichol
+Released CC0.S
+
+Cursor Art
+Author: GoopyBus
+https://opengameart.org/content/cursor-0
+
+Coin Icon
+Author: galangpiliang
+https://opengameart.org/content/coin-icon

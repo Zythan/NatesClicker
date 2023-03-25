@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <title>First Clicker</title>
+        <link rel="stylesheet" href="main.css">
+        <!--Stops favicon.ico request error :: GET http://localhost:8000/favicon.ico 404 (File not found) when developing and doing shift-reload. Displays nothing-->
+        <link rel="shortcut icon" href="#" type="image/x-icon">
+    </head>
+
+    <body style="background-color: black;">
+        <div class="sectionLeft">
+            <center>
+            <div class="scoreContainer unselectable">
+                <span id="score">0</span> coins<br>
+                <span id="scorepersecond">0</span> coins per second
+            </div>
+            <br>
+            <div class="unselectable" id="clicker"></div>
+<!--            <div class="clickerContainer  unselectable">-->
+<!--                <img id="clicker" src="images/dorver/dorver-idle0.png" height="256px" width="204px">-->
+<!--            </div>-->
+            <br>
+            <button onclick="saveGame();">Save Game</button>
+            <div class="sectionFooter">
+                <h5>First Clicker</h5>
+                <button onclick="resetGame();">Reset Game</button>
+            </div>
+            </center>
+        </div>
+
+        <div class="sectionRight" >
+            <div id="upgradeContainer"></div>
+            <div id="shopContainer"></div>
+            <div id="achievementContainer"></div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</HTML>

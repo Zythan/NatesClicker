@@ -1,0 +1,134 @@
+
+.sectionLeft {
+    background-color: rgba(100,100,100,1);
+    float: left;
+    width: 80%;
+}
+.sectionRight {
+    float: right;
+    width: 20%;
+}
+.scoreContainer {
+    background-color: rgba(238,238,238,.6);
+    width        : 50%;
+    padding      : 10px;
+    border-radius: 10px;
+    font-size    : 24px;
+    font-wieght  : bold;
+}
+
+#clicker {
+    background-image: url("./images/dorver/dorver-idle0.png");
+    background-size : contain;
+    position        : relative;
+    transition      : all .2s ease-in-out;
+    width           : 256px;
+    height          : 204px;
+}
+#clicker:hover  {
+    transform: scale(1.20);
+}
+#clicker:active {
+    transform: scale(0.90);
+}
+
+#clicker > .number {
+    z-index: 99;
+    font-size: 24px;
+    color: white;
+    position: absolute;
+}
+
+
+
+/** Old clicker container
+.clickerContainer img  {
+    position: relative;
+    transition: all  .2s ease-in-out;
+    padding: 20px;
+    width: 275px;
+    height: 190px;
+
+}
+.clickerContainer img:hover  { transform: scale(1.10); }
+.clickerContainer img:active { transform: scale(0.99); }
+.clickerContainer {
+    background-color: rgba(50,50,238,1);
+    background-image: url("images/terrain/craggyMountain_background_01.svg");
+    background-size : 200px 240px;
+    background-position: center;
+    width           : 300px;
+    height          : 210px;
+    padding: 10px
+}
+*/
+
+.shopButton {
+    background-color: #b5b5b5;
+    transition      : all .2s ease-in-out;
+    border-radius   : 10px;
+    width           : 100%;
+    margin          : 10px 0px 10px 0px;
+}
+.shopButton:hover {
+    background-color: #c7c7c7;
+    transition      : all .2s ease-in-out;
+}
+.shopButton #image {
+    width: 25%;
+}
+.shopButton img {
+    height: 64px;
+    width : 64px;
+}
+.shopButton #nameAndCost p {
+    margin: 0px;
+    width : 60%;
+}
+.shopButton #nameAndCost p:first-of-type {
+    font-size: 24px;
+}
+.shopButton #amount {
+    font-size  : 48px;
+    color      : #595959;
+    font-family: roboto;
+    width      : 15%;
+}
+
+.sectionFooter {
+    background-color: rgba(238,238,238,.6);
+    text-align: center;
+    margin: 20%;
+}
+
+.unselectable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#upgradeContainer img {
+    height: 64px;
+    width : 64px;
+}
+
+#achievementContainer img {
+    height: 64px;
+    width : 64px;
+}
+
+
+
+
+
+/*.inventory{*/
+/*    position: fixed;*/
+/*    bottom  : 0;*/
+/*    width   : 100%;*/
+/*}*/
+
+/*button{*/
+/*    background-color: white;*/
+/*    font-size: 18px;*/
+/*}*/

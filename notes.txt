@@ -1,0 +1,22 @@
+Center A Div:
+<div class="sectionCenter"></div>
+Style:
+.sectionCenter{
+    width:256px;
+    height:256px;
+    position: fixed;
+    top: 33%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+}
+
+webserver
+py -m http.server <PORT>
+
+py -m http.server 8000
+http://localhost:8000/
+
+
+
+<table class="shopButton  unselectable" onclick="building.purchase('+i+')"><tr><td id="image"><img src="'+building.image[i]+'"></td><td id="nameAndCost"><p>'+building.name[i]+'</p><p><span>'+building.cost[i]+'</span> coins</p></td><td id="amount"><span>0</span>'+building.count[i]+'</td></tr></table>
