@@ -66,46 +66,83 @@ var building = {
 
 var upgrade = {
     name: [
+        "Stone Clicker",
+        "Iron Clicker",
+        "Steel Clicker",
         "Stone Flakes",
         "Iron Bands",
-        "Stone Clicker"
+        "Steel Spikes",
+        "Steel Point"
     ],
     description: [
-        "Clubs are twice as efficient",
-        "Clubs are twice as efficient",
-        "Clicking is twice as efficient"
+        "Clicking is twice as efficient",
+        "Clicking is twice as efficient",
+        "Clicking is twice as efficient",
+        "Sticks are twice as efficient",
+        "Sticks are twice as efficient",
+        "Sticks are 4x as efficient",
+        "Clubs are twice as efficient"
     ],
     image: [
+        "images/cursor/newpiskel.png",
+        "images/cursor/newpiskel.png",
+        "images/cursor/newpiskel.png",
         "images/weapons/1club.png",
         "images/weapons/1club.png",
-        "images/cursor/newpiskel.png"
+        "images/weapons/1club.png",
+        "images/weapons/2reinforced_club.png"
     ],
     type: [
+        "click",
+        "click",
+        "click",
         "building",
         "building",
-        "click"
+        "building",
+        "building"
     ],
     cost: [
-        300,
-        500,
-        300
+        250 ,
+        500 ,
+        1000,
+        100 ,
+        250 ,
+        500 ,
+        5000,
+
     ],
     buildingIndex: [
+        -1,
+        -1,
+        -1,
         0 ,
         0 ,
-        -1
+        0 ,
+        1
     ],
     requirement: [
-        1,
-        5,
-        1
+        1   ,
+        500 ,
+        1000,
+        1   ,
+        5   ,
+        25  ,
+        5
     ],
     bonus: [
         2,
         2,
+        2,
+        2,
+        2,
+        4,
         2
     ],
     purchased:[
+        false,
+        false,
+        false,
+        false,
         false,
         false,
         false
@@ -127,15 +164,13 @@ var upgrade = {
                 display.updateUpgrades();
                 display.updateShop()
             }
-
         }
-
     }
 };
 
 var achievement = {
     name: [
-        "Stone Fingers",
+        "It's a Stick!",
         "A Humble Start",
         "Fighter Tactics"
     ],
@@ -305,7 +340,7 @@ function createNumberOnClicker(event) {
     let clickerOffset = clicker.getBoundingClientRect();
     //console.log(JSON.stringify(clickerOffset));
     let position = {
-        x: event.pageX - clickerOffset.left + randomNumber(1,5) ,
+        x: event.pageX - clickerOffset.left + randomNumber(1,5) -10,
         y: event.pageY - clickerOffset.top  + randomNumber(1,5)
     }
 
