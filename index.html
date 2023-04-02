@@ -9,33 +9,40 @@
 
     <body style="background-color: black;">
 
-        <!--Main Display Section at Left-->
-        <div class="sectionLeft">
-            <!--todo get rid of the damn old center sigh-->
-            <!--Score Container at Top Left-->
-<!--            <center>-->
-            <div class="scoreContainer unselectable">
-                <span id="score">0</span> coins<br>
-                <span id="scorepersecond">0</span> coins per second
-            </div>
-            <br>
-            <!--Clicker Area-->
-            <div class="clickerContainer  unselectable">
-                <div class="unselectable" id="clicker"></div>
-            </div>
-            <!--Footer-->
-            <div class="sectionFooter unselectable">
-                <h5>Nate's Clicker</h5>
-                <button onclick="saveGame();">Save Game</button>
-                <button onclick="resetGame();">Reset Game</button>
-            </div>
-<!--            </center>-->
-        </div>
 
-        <div class="sectionRight unselectable" >
-            <div id="upgradeContainer"></div>
-            <div id="shopContainer"></div>
-            <div id="achievementContainer"></div>
+        <div class="display-container">
+
+            <!--Right display section-->
+            <div class="display-left unselectable">
+                <div id="upgradeContainer"></div>
+                <div id="shopContainer"></div>
+                <div id="achievementContainer"></div>
+            </div>
+
+            <!--Main Display Section Center-->
+            <div class="display-center">
+                <!--Score Container at Top Left-->
+                <<div class="scoreContainer unselectable">
+                    <span id="score">0</span> coins<br>
+                    <span id="scorepersecond">0</span> coins per second
+                </div>
+                <br>
+                <!--Clicker Area-->
+                <div class="clickerContainer  unselectable">
+                    <div class="unselectable" id="clicker"></div>
+                </div>
+                <!--Footer-->
+                <div class="sectionFooter unselectable">
+                    <h5>Nate's Clicker</h5>
+                    <button onclick="saveGame();">Save Game</button>
+                    <button onclick="resetGame();">Reset Game</button>
+                </div>
+            </div>
+
+            <!--Main Display Section Right-->
+            <div class="display-right">
+                <h1>Hi there</h1>
+            </div>
         </div>
 
         <!--JS module section-->

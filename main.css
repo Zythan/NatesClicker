@@ -1,13 +1,30 @@
+.display-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
 
-.sectionLeft {
+.display-left {
+    background-color: aquamarine;
+    border      : brown;
+    border-width: 10px;
+    border-style: solid;
+}
+
+.display-center {
     background-color: rgba(50,50,150,1);
-    float: left;
-    width: 80%;
+    border      : blueviolet;
+    border-width: 10px;
+    border-style: solid;
 }
-.sectionRight {
-    float: right;
-    width: 20%;
+
+.display-right {
+    background-color: rgba(50,50,150,1);
+    border      : brown;
+    border-width: 10px;
+    border-style: solid;
 }
+
+
 
 .scoreContainer {
     background-color: midnightblue;/*rgba(238,238,238,.6);*/
