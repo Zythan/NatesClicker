@@ -26,14 +26,14 @@
 
 
 
-.scoreContainer {
+.score-container {
     background-color: midnightblue;/*rgba(238,238,238,.6);*/
     width           : 300px;
     padding         : 10px;
     border-radius   : 10px;
     color           : white;
     font-size       : 24px;
-    font-wieght     : bold;
+    font-weight     : bold;
 }
 
 #clicker {
@@ -63,7 +63,7 @@
     width  : 300px;
 }
 
-.clickerContainer {
+.clicker-container {
     background-color   : rgba(50,50,238,1);
     background-image   : url("images/terrain/craggyMountain_background_01.svg");
     background-size    : 200px 240px;
@@ -73,65 +73,58 @@
     padding            : 10px
 }
 
-
-.shopButton {
+.shop-button {
     background-color: #b5b5b5;
     transition      : all .2s ease-in-out;
     border-radius   : 10px;
     width           : 100%;
-    margin          : 10px 0px 10px 0px;
+    margin          : 10px 0 10px 0;
 }
-.shopButton:hover {
+.shop-button:hover {
     background-color: #c7c7c7;
     transition      : all .2s ease-in-out;
 }
-.shopButton #image {
+.shop-button #image {
     width: 25%;
 }
-.shopButton img {
+.shop-button img {
     height: 64px;
     width : 64px;
 }
-.shopButton #nameAndCost p {
-    margin: 0px;
+.shop-button #nameAndCost p {
+    margin: 0;
     width : 60%;
 }
-.shopButton #nameAndCost p:first-of-type {
+.shop-button #nameAndCost p:first-of-type {
     font-size: 24px;
 }
-.shopButton #amount {
+.shop-button #amount {
     font-size  : 48px;
     color      : #595959;
-    font-family: roboto;
+    font-family: roboto,serif;
     width      : 15%;
 }
 
-.sectionFooter {
+.section-footer {
     background-color: midnightblue; /*rgba(00,00,00,.6);*/
     width           : 300px;
     text-align      : center;
     margin          : 20%;
     color           : white;
     font-size       : 24px;
-    font-wieght     : bold;
+    font-weight     : bold;
     border-radius   : 10px;
 }
 
-#upgradeContainer img {
+#upgrade-container img {
     height: 64px;
     width : 64px;
 }
 
-#achievementContainer img {
+#achievement-container img {
     height: 64px;
     width : 64px;
 }
-
-
-
-
-
-
 
 .unselectable {
     -webkit-user-select: none;
@@ -140,14 +133,13 @@
     user-select: none;
 }
 
-.vertical-center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
+/*.vertical-center {*/
+/*    margin: 0;*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    -ms-transform: translateY(-50%);*/
+/*    transform: translateY(-50%);*/
+/*}*/
 
 /*.inventory{*/
 /*    position: fixed;*/

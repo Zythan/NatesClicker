@@ -216,10 +216,10 @@ var display = {
     },
 
     updateShop: function() {
-        document.getElementById("shopContainer").innerHTML = "";
+        document.getElementById("shop-container").innerHTML = "";
         for (i = 0; i < building.name.length; i++) {
-            document.getElementById("shopContainer").innerHTML +=
-                '<table class="shopButton  unselectable" onclick="building.purchase('+i+')">' +
+            document.getElementById("shop-container").innerHTML +=
+                '<table class="shop-button  unselectable" onclick="building.purchase('+i+')">' +
                 '<tr>' +
                 '<td id="image"><img src="'+building.image[i]+'"></td>' +
                 '<td id="nameAndCost"><p>'+building.name[i]+'</p><p><span>'+building.cost[i]+'</span> coins</p></td>' +
@@ -230,24 +230,24 @@ var display = {
     },
 
     updateUpgrades: function() {
-        document.getElementById("upgradeContainer").innerHTML = "";
+        document.getElementById("upgrade-container").innerHTML = "";
         for (i = 0; i < upgrade.name.length; i++) {
             if (!upgrade.purchased[i]) {
                 if (upgrade.type[i] == "building" && building.count[upgrade.buildingIndex[i]] >= upgrade.requirement[i]) {
-                     document.getElementById("upgradeContainer").innerHTML += '<img src="'+upgrade.image[i]+'" title="'+upgrade.name[i]+' &#10; '+upgrade.description[i]+' &#10; ('+upgrade.cost[i]+' coins)" onclick="upgrade.purchase('+i+')">'
+                     document.getElementById("upgrade-container").innerHTML += '<img src="'+upgrade.image[i]+'" title="'+upgrade.name[i]+' &#10; '+upgrade.description[i]+' &#10; ('+upgrade.cost[i]+' coins)" onclick="upgrade.purchase('+i+')">'
                 }
                 else if (upgrade.type[i] == "click" && game.totalClicks >= upgrade.requirement[i]) {
-                     document.getElementById("upgradeContainer").innerHTML += '<img src="'+upgrade.image[i]+'" title="'+upgrade.name[i]+' &#10; '+upgrade.description[i]+' &#10; ('+upgrade.cost[i]+' coins)" onclick="upgrade.purchase('+i+')">'
+                     document.getElementById("upgrade-container").innerHTML += '<img src="'+upgrade.image[i]+'" title="'+upgrade.name[i]+' &#10; '+upgrade.description[i]+' &#10; ('+upgrade.cost[i]+' coins)" onclick="upgrade.purchase('+i+')">'
                 }
             }
         }
     },
 
     updateAchievements: function() {
-        document.getElementById("achievementContainer").innerHTML = "";
+        document.getElementById("achievement-container").innerHTML = "";
         for (i = 0; i < achievement.name.length; i++) {
             if (achievement.awarded[i]) {
-                document.getElementById("achievementContainer").innerHTML += '<img src="'+achievement.image[i]+'" title="'+achievement.name[i]+' &#10; '+achievement.description[i]+'">';
+                document.getElementById("achievement-container").innerHTML += '<img src="'+achievement.image[i]+'" title="'+achievement.name[i]+' &#10; '+achievement.description[i]+'">';
             }
         }
     }
