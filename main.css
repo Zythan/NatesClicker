@@ -1,6 +1,6 @@
 
 .sectionLeft {
-    background-color: rgba(100,100,100,1);
+    background-color: rgba(50,50,150,1);
     float: left;
     width: 80%;
 }
@@ -8,13 +8,15 @@
     float: right;
     width: 20%;
 }
+
 .scoreContainer {
-    background-color: rgba(238,238,238,.6);
-    width        : 50%;
-    padding      : 10px;
-    border-radius: 10px;
-    font-size    : 24px;
-    font-wieght  : bold;
+    background-color: midnightblue;/*rgba(238,238,238,.6);*/
+    width           : 300px;
+    padding         : 10px;
+    border-radius   : 10px;
+    color           : white;
+    font-size       : 24px;
+    font-wieght     : bold;
 }
 
 #clicker {
@@ -37,6 +39,11 @@
     font-size: 24px;
     color    : white;
     position : absolute;
+}
+
+.clicker-center {
+    height : 630px;
+    width  : 300px;
 }
 
 .clickerContainer {
@@ -83,16 +90,14 @@
 }
 
 .sectionFooter {
-    background-color: rgba(238,238,238,.6);
-    text-align: center;
-    margin: 20%;
-}
-
-.unselectable {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    background-color: midnightblue; /*rgba(00,00,00,.6);*/
+    width           : 300px;
+    text-align      : center;
+    margin          : 20%;
+    color           : white;
+    font-size       : 24px;
+    font-wieght     : bold;
+    border-radius   : 10px;
 }
 
 #upgradeContainer img {
@@ -108,6 +113,36 @@
 
 
 
+
+
+
+.unselectable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.center-vh {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.center {
+    text-align: center;
+}
 
 /*.inventory{*/
 /*    position: fixed;*/
