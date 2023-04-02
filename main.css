@@ -5,23 +5,23 @@
 
 .display-left {
     background-color: aquamarine;
-    border      : brown;
-    border-width: 10px;
-    border-style: solid;
+    border          : brown;
+    border-width    : 10px;
+    border-style    : solid;
 }
 
 .display-center {
     background-color: rgba(50,50,150,1);
-    border      : blueviolet;
-    border-width: 10px;
-    border-style: solid;
+    border          : blueviolet;
+    border-width    : 10px;
+    border-style    : solid;
 }
 
 .display-right {
     background-color: rgba(50,50,150,1);
-    border      : brown;
-    border-width: 10px;
-    border-style: solid;
+    border          : brown;
+    border-width    : 10px;
+    border-style    : solid;
 }
 
 
