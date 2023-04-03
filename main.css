@@ -16,6 +16,7 @@
     border          : blueviolet;
     border-width    : 10px;
     border-style    : solid;
+    align-content   : center;
 }
 
 .display-right {
@@ -71,8 +72,19 @@
 
 
 /*Center Display Section*/
+.center-container {
+    display: grid;
+    grid-template-columns: auto;
+    align-items  : center;
+    align-content: center;
+    border          : blueviolet;
+    border-width    : 10px;
+    border-style    : solid;
+}
+
 .score-container {
     background-color: midnightblue;/*rgba(238,238,238,.6);*/
+    text-align      : center;
     width           : 300px;
     padding         : 10px;
     border-radius   : 10px;
@@ -103,16 +115,12 @@
     position : absolute;
 }
 
-.clicker-center {
-    height : 630px;
-    width  : 300px;
-}
-
 .clicker-container {
     background-color   : rgba(50,50,238,1);
     background-image   : url("images/terrain/craggyMountain_background_01.svg");
     background-size    : 200px 240px;
     background-position: center;
+    text-align         : center;
     width              : 300px;
     height             : 210px;
     padding            : 10px
@@ -135,11 +143,6 @@
 /*    display        : flex;*/
 /*    justify-content: center;*/
 /*}*/
-
-.center-container {
-    display: grid;
-    grid-template-columns: auto;
-}
 .unselectable {
     -webkit-user-select: none;
     -moz-user-select: none;
