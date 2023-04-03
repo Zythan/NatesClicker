@@ -73,13 +73,12 @@
 
 /*Center Display Section*/
 .center-container {
-    display: grid;
+    display              : grid;
     grid-template-columns: auto;
-    align-items  : center;
-    align-content: center;
-    border          : blueviolet;
-    border-width    : 10px;
-    border-style    : solid;
+    justify-items        : center;
+    border               : white;
+    border-width         : 10px;
+    border-style         : solid;
 }
 
 .score-container {

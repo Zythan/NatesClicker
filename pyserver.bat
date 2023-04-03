@@ -1,2 +1,2 @@
-py -m http.server 8000
-pause
+echo Starting Webserver
+py serverconfig.py
