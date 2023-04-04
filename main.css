@@ -1,7 +1,18 @@
 /*Display Grid Section*/
 .display-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: [col] auto [col2] auto [col3] auto;
+    grid-template-rows   : [row] auto [row2] auto
+
+}
+
+.display-header {
+    background-color: rgba(50,50,150,1);
+    border          : green;
+    border-width    : 10px;
+    border-style    : solid;
+    grid-column     : col / span 3;
+    grid-row        : row;
 }
 
 .display-left {
@@ -9,6 +20,8 @@
     border          : brown;
     border-width    : 10px;
     border-style    : solid;
+    grid-column     : col;
+    grid-row        : row2;
 }
 
 .display-center {
@@ -17,6 +30,8 @@
     border-width    : 10px;
     border-style    : solid;
     align-content   : center;
+    grid-column     : col2;
+    grid-row        : row2;
 }
 
 .display-right {
@@ -24,6 +39,8 @@
     border          : brown;
     border-width    : 10px;
     border-style    : solid;
+    grid-column     : col3;
+    grid-row        : row2;
 }
 
 /*Display Left Components*/
