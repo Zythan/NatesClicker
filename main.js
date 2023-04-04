@@ -212,6 +212,7 @@ var display = {
     updateScore: function() {
         document.getElementById("score").innerHTML =  game.score;
         document.getElementById("scorepersecond").innerHTML =  game.getScorePerSecond();
+        document.getElementById("clicker-power").innerHTML =  game.clickValue;
         document.title = game.score + " coins - Nate's Clicker";
     },
 

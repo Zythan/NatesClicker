@@ -1,7 +1,7 @@
 /*Display Grid Section*/
 .display-container {
     display: grid;
-    grid-template-columns: [col] auto [col2] auto [col3] auto;
+    grid-template-columns: [col] 25% [col2] auto [col3] 25%;
     grid-template-rows   : [row] auto [row2] auto
 
 }
@@ -58,7 +58,7 @@
 .score-container {
     background-color: midnightblue;/*rgba(238,238,238,.6);*/
     text-align      : center;
-    width           : 600px;
+    width           : 900px;
     padding         : 10px;
     border-radius   : 10px;
     color           : white;
