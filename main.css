@@ -43,6 +43,29 @@
     grid-row        : row2;
 }
 
+/*Display Header*/
+.game-title {
+    background-color: midnightblue;/*rgba(238,238,238,.6);*/
+    text-align      : center;
+    width           : 600px;
+    padding         : 10px;
+    border-radius   : 10px;
+    color           : white;
+    font-size       : 24px;
+    font-weight     : bold;
+}
+
+.score-container {
+    background-color: midnightblue;/*rgba(238,238,238,.6);*/
+    text-align      : center;
+    width           : 600px;
+    padding         : 10px;
+    border-radius   : 10px;
+    color           : white;
+    font-size       : 24px;
+    font-weight     : bold;
+}
+
 /*Display Left Components*/
 .shop-button {
     background-color: #b5b5b5;
@@ -51,24 +74,30 @@
     width           : 100%;
     margin          : 10px 0 10px 0;
 }
+
 .shop-button:hover {
     background-color: #c7c7c7;
     transition      : all .2s ease-in-out;
 }
+
 .shop-button #image {
     width: 25%;
 }
+
 .shop-button img {
     height: 64px;
     width : 64px;
 }
+
 .shop-button #nameAndCost p {
     margin: 0;
     width : 60%;
 }
+
 .shop-button #nameAndCost p:first-of-type {
     font-size: 24px;
 }
+
 .shop-button #amount {
     font-size  : 48px;
     color      : #595959;
@@ -86,27 +115,15 @@
     width : 64px;
 }
 
-
-
 /*Center Display Section*/
-.center-container {
+.center-grid {
     display              : grid;
-    grid-template-columns: auto;
+    grid-template-columns: [col]auto;
+    grid-template-rows   : [clicker]80% [footer]20%;
     justify-items        : center;
-    border               : white;
+    border               : magenta;
     border-width         : 10px;
     border-style         : solid;
-}
-
-.score-container {
-    background-color: midnightblue;/*rgba(238,238,238,.6);*/
-    text-align      : center;
-    width           : 300px;
-    padding         : 10px;
-    border-radius   : 10px;
-    color           : white;
-    font-size       : 24px;
-    font-weight     : bold;
 }
 
 #clicker {
@@ -114,12 +131,16 @@
     background-size : contain;
     position        : relative;
     transition      : all .2s ease-in-out;
-    width           : 256px;
-    height          : 204px;
+    width           : 400px;
+    height          : 318px;
+    margin-top      : 150px;
+    margin-left     : 125px;
 }
+
 #clicker:hover  {
     transform: scale(1.20);
 }
+
 #clicker:active {
     transform: scale(0.90);
 }
@@ -134,31 +155,48 @@
 .clicker-container {
     background-color   : rgba(50,50,238,1);
     background-image   : url("images/terrain/craggyMountain_background_01.svg");
-    background-size    : 200px 240px;
+    background-size    : 400px 480px;
     background-position: center;
     text-align         : center;
-    width              : 300px;
-    height             : 210px;
+    width              : 600px;
+    height             : 450px;
     padding            : 10px
 }
 
 .section-footer {
-    background-color: midnightblue; /*rgba(00,00,00,.6);*/
-    width           : 300px;
+    background-color: midnightblue;
+    width           : 350px;
     text-align      : center;
-    margin          : 20%;
     color           : white;
-    font-size       : 24px;
+    font-size       : 40px;
     font-weight     : bold;
     border-radius   : 10px;
+    border          : blueviolet;
+    border-width    : 10px;
+    border-style    : solid;
 }
 
-
 /*Generic Selectors*/
-/*.center-container {*/
-/*    display        : flex;*/
-/*    justify-content: center;*/
-/*}*/
+.center-container {
+    display              : grid;
+    grid-template-columns: auto;
+    grid-template-rows   : auto auto;
+    grid-gap: 25px;
+    justify-items        : center;
+    border               : white;
+    border-width         : 10px;
+    border-style         : solid;
+}
+
+.center-container-red{
+    display              : grid;
+    grid-template-columns: auto;
+    justify-items        : center;
+    border               : red;
+    border-width         : 10px;
+    border-style         : solid;
+}
+
 .unselectable {
     -webkit-user-select: none;
     -moz-user-select: none;

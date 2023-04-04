@@ -10,7 +10,15 @@
     <body style="background-color: black;">
         <div class="display-container">
             <div class="display-header">
-                <span>Nate's Clicker</span>
+                <div class="center-container-red">
+                    <span class="game-title">Nate's Clicker</span>
+                    <!--Score Container at Top Center-->
+                    <div class="score-container unselectable">
+                        Clicker Power <span id="clicker-power" >0</span>
+                        Total Coins   <span id="score"         >0</span>
+                        Coins Second  <span id="scorepersecond">0</span>
+                    </div>
+                </div>
             </div>
             <!--Left display section-->
             <div class="display-left unselectable">
@@ -21,19 +29,13 @@
             <!--Main Display Section Center-->
             <div class="display-center">
               <div class="center-container">
-                  <!--Score Container at Top Center-->
-                  <div class="score-container unselectable">
-                      <span id="score">0</span> coins<br>
-                      <span id="scorepersecond">0</span> coins per second
-                  </div>
-                  <br>
                   <!--Clicker Area-->
                   <div class="clicker-container  unselectable">
                       <div class="unselectable" id="clicker"></div>
                   </div>
                   <!--Footer-->
                   <div class="section-footer unselectable">
-                      <h5>Nate's Clicker</h5>
+                      <span>Nate's Clicker</span><br>
                       <button onclick="saveGame();">Save Game</button>
                       <button onclick="resetGame();">Reset Game</button>
                   </div>
