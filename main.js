@@ -204,8 +204,51 @@ var achievement = {
     earn: function(index) {
         this.awarded[index] = true;
     }
+};
 
+var menutab = {
+    name: [
+        "upgrade-tab",
+        "achievement-tab",
+        "tbd1",
+        "tbd2"
+    ],
+    imageActive: [
+        "images/text/upgradered.png",
+        "images/text/achievementred.png",
+        "images/text/tbdred.png",
+        "images/text/tbdred.png"
+    ],
+    imageInactive: [
+        "images/text/upgradeblue.png",
+        "images/text/achievementblue.png",
+        "images/text/tbdredblue.png",
+        "images/text/tbdredblue.png"
+    ],
+    description: [
+        "Upgrades",
+        "Achievement",
+        "To Be Determined",
+        "To Be Determined"
+    ],
+    isActive: [
+        true,
+        false,
+        false,
+        false
+    ],
 
+    loadTab: function() {
+        //Todo Image below is wacked 0x0 size it is something to do with css or load path but no console error
+        // document.getElementById("menu-container").innerHTML = "";
+        // for (let i = 0; i < menutab.name.length; i++) {
+        //     let tabName = menutab.name[i];
+        //     let isActive = menutab.isActive[i];
+        //     document.getElementById("menu-container").innerHTML +=
+        //          (isActive) ? '<img class="image" id="'+tabName+'" scr="'+menutab.imageActive[i]+'">'
+        //                     : '<img class="image" id="'+tabName+'" scr="'+menutab.imageInactive[i]+'">'
+        // }
+    }
 }
 
 var display = {
@@ -315,6 +358,7 @@ function resetGame() {
         location.reload();
     }
 }
+
 function fadeOut(element, duration, rate, finalOpacity, callback) {
     let opacity = 1;
 
@@ -337,9 +381,9 @@ function createNumberOnClicker(event) {
     //Grab Clicker
     let clicker = document.getElementById("clicker");
 
-    // Grab teh position on where the clicker was clicked
+    // Grab the position on where the clicker was clicked
     let clickerOffset = clicker.getBoundingClientRect();
-    //console.log(JSON.stringify(clickerOffset));
+    console.log(JSON.stringify(clickerOffset));
     let position = {
         x: event.pageX - clickerOffset.left + randomNumber(1,5) -10,
         y: event.pageY - clickerOffset.top  + randomNumber(1,5)
@@ -381,6 +425,7 @@ window.onload = function() {
     display.updateUpgrades();
     display.updateAchievements();
     display.updateShop();
+    menutab.loadTab();
 };
 
 setInterval(function() {

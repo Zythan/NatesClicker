@@ -1,7 +1,25 @@
 <html>
 <head></head>
+<style>
+    .grid1 {
+        display              :grid;
+        grid-template-columns: [col1]auto [col2]auto;
+        grid-template-row    : auto;
+        /*text-align: center;*/
+        justify-items        : center;
+        border               : magenta;
+        border-width         : 10px;
+        border-style         : solid;
+    }
+</style>
 <body>
 <!--'<img src="'+upgrade.image[i]+'" title="'+upgrade.name[i]+'" @#10; '+upgrade.discription[i]+'" @#10; ('+upgrade.cost[i]+' coins)" onclick="upgrade.purchase('+i+')">'-->
-<img src="image/coin/coin.png" title="Coin Image @#10; Hi there">
+<!--<img src="image/coin/coin.png" title="Coin Image @#10; Hi there">-->
+<div class="grid1">
+    <div>hi</div>
+    <div>bye</div>
+</div>
+
+
 </body>
 </html>
