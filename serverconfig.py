@@ -1,7 +1,7 @@
 import http.server
 import socketserver
 
-PORT = 8080
+PORT = 8000
 
 class HttpRequestHandler(http.server.SimpleHTTPRequestHandler):
     extensions_map = {
